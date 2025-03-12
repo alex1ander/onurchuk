@@ -1,0 +1,156 @@
+@use 'variables' as *;
+@use 'sass:math';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/hero-section';
+@use 'components/information-section';
+
+@use 'components/svg-animation';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $dark-text;
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.overflow-auto{
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.container{
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+
+
+$content-padding: 60px;
+.content{
+    padding-left: $content-padding;
+    padding-right: $content-padding;
+
+    &-padding-left{
+        padding-left: $content-padding
+    }
+    &-padding-right{
+        padding-right: $content-padding
+    }
+}
+
+@media (max-width: 1000px){
+    $content-padding: 20px;
+    .content{
+        padding-left: $content-padding;
+        padding-right: $content-padding;
+
+        &-padding-left{
+            padding-left: $content-padding
+        }
+        &-padding-right{
+            padding-right: $content-padding
+        }
+    }
+    .info-wrapper{
+        padding-right: $content-padding;
+    }
+}
+
+
+
+.fill-dark{
+    fill:$dark-text;
+}
+
+.text-with-svg{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+
+.btn-240{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    min-width: 240px;
+    width: 240px;
+    border-radius: 26px;
+
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+.btn-120-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    min-width: 120px;
+    min-height: 120px;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5em;
+    text-wrap: balance;
+    text-align: center;
+}
+
+
+.btn-white{
+    background: #fff;
+    color: $dark-text;
+    &-transparent{
+        border: 1px solid #fff;
+        background: transparent;
+    }
+}
+
+.btn-dark{
+    background: $dark-text;
+    color: #fff;
+}
+@media (max-width: 425px) {
+    .btn-240{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1001px) {
+    .mobile {
+        display: none!important;
+    }
+}
+@media (max-width: 1000px) {
+    .desktop {
+        display: none!important;
+    }
+}

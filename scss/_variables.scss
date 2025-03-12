@@ -1,0 +1,22 @@
+$dark-text: #3F4041;
+
+@mixin list-element {
+    > li{
+        display: flex;
+    }
+    > li > a{
+        display: flex;
+        align-items: center;
+        height: 48px;
+        width: 100%;
+    }
+    > li:not(:last-child) > a{
+        border-bottom: 1px solid #E8EAF3;
+    }
+}
+
+
+@mixin container-padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}

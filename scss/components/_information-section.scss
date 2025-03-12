@@ -1,0 +1,172 @@
+@use 'sass:math';
+@use '../variables' as *;
+
+
+.information-section{
+    @include container-padding;
+
+    position: relative;
+    overflow: hidden;
+
+
+    .section-title{
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 1.2em;
+    }
+    .section-text{
+        margin-top:24px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5em;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &.dark-style{
+        background: linear-gradient(106.84deg, rgba(45, 45, 45, 0.95) 1.07%, rgba(63, 64, 65, 0.95) 66.38%, rgba(45, 45, 45, 0.95) 99.28%);
+
+        * {
+            color: #fff;
+        }
+        h2 {
+            border-color: #fff;
+        }
+    }
+
+}
+.background-svg{
+    position: absolute;
+    z-index: -1;
+    width: 758px;
+    top: -150px;
+    left: 0;
+    right: 0;
+    aspect-ratio: 1;
+    margin: auto;
+    stroke-width: 10;
+}
+@media (max-width: 900px) {
+    .background-svg{
+        stroke-width: 30;
+        top: calc(-270px / 2);
+        width: 270px;
+    }
+}
+
+
+h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-left: 16px;
+    border-left: 2px solid $dark-text;
+}
+
+.top-part-section{
+    margin: 48px 0;
+}
+
+.doctors-row{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:24px;
+    .the-doctor{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        img{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+        }
+
+        .name{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.2em;
+        }
+        .text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+    }
+}
+
+
+
+.info-with-photo{
+    display: flex;
+    align-items: center;
+    gap:100px;
+
+    .info-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap:56px;
+        width: 100%;
+    }
+
+    .info{
+        text-wrap: pretty;
+
+        .title{
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 1.2em;
+        }
+        .text{
+            margin-top:24px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.5em;
+
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
+    .photo-wrapper{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 1024px){
+    .info-with-photo{
+        gap: 32px;
+    }
+}
+@media(max-width: 900px){
+    .information-section{
+        .section-title{
+            font-size: 22px;
+        }
+        .section-text{
+            font-size: 16px;
+        }
+    }
+
+    .doctors-row{
+        .the-doctor{
+            .name{
+                font-size: 16px;
+            }
+            .text{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .info-with-photo{
+        flex-direction: column;
+    }
+}

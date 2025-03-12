@@ -13,12 +13,14 @@
         font-weight: 300;
         font-size: 36px;
         line-height: 1.2em;
+        text-wrap: pretty;
     }
     .section-text{
         margin-top:24px;
         font-weight: 400;
         font-size: 20px;
         line-height: 1.5em;
+        text-wrap: pretty;
 
         display: flex;
         flex-direction: column;
@@ -38,6 +40,8 @@
 
 }
 .background-svg{
+    max-width: min(1440px,100%);
+
     position: absolute;
     z-index: -1;
     width: 758px;
@@ -101,10 +105,12 @@ h2{
 
 
 
-.info-with-photo{
+.two-part-content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap:100px;
+
 
     .info-wrapper{
         display: flex;
@@ -115,22 +121,6 @@ h2{
 
     .info{
         text-wrap: pretty;
-
-        .title{
-            font-weight: 300;
-            font-size: 36px;
-            line-height: 1.2em;
-        }
-        .text{
-            margin-top:24px;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 1.5em;
-
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
     }
     .photo-wrapper{
         width: 100%;
@@ -140,7 +130,7 @@ h2{
     }
 }
 @media(max-width: 1024px){
-    .info-with-photo{
+    .two-part-content{
         gap: 32px;
     }
 }
@@ -165,8 +155,21 @@ h2{
         }
     }
 }
+
+
+@media(min-width: 769px){
+    .top-part-section{
+        .section-title{
+            max-width: 60%;
+        }
+    }
+}
 @media(max-width: 768px){
-    .info-with-photo{
+    .two-part-content{
         flex-direction: column;
+
+        .slider-buttons{
+            display: none;
+        }
     }
 }

@@ -1,0 +1,64 @@
+.slider-top-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-buttons{
+    display: flex;
+    gap: 32px;
+}
+.slider-btn{
+    cursor: pointer;
+    height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+    border-radius: 100%;
+
+    &-prev{
+        transform: rotate(180deg);
+    }
+    &.swiper-button-disabled{
+        opacity: 0.5;
+    }
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .card-image{
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        aspect-ratio: 1 / 1.2;
+        object-fit: cover;
+        object-position: center;
+    }
+    .card-text{
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .service-card {
+        .card-text {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}

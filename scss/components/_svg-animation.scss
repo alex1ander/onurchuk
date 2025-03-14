@@ -60,6 +60,15 @@ $animationTime: 2;
 }
 
 
+.body-svg{
+    align-self: flex-start;
+    .body-line{
+        stroke-dasharray: 2598.71923828125;
+        stroke-dashoffset: 2598.71923828125;
+        animation: drawLine #{$animationTime * 2}s ease-in-out forwards;
+    }
+}
+
 
 @keyframes drawLine {
     to {

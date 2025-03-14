@@ -1,3 +1,6 @@
+@use 'sass:math';
+@use '../variables' as *;
+
 .hero-section{
     max-height: 783px;
     height: 783px;
@@ -6,7 +9,7 @@
     flex-direction: column;
 
     *{
-        color: #fff;
+        color: var(--prime-color);
     }
 
 }
@@ -56,7 +59,6 @@
     font-size: 16px;
     line-height: 1.5em;
     text-transform: uppercase;
-
 }
 .this-titles{
     display: flex;
@@ -66,8 +68,6 @@
         font-weight: 300;
         font-size: 56px;
         line-height: 1.2em;
-        display: flex;
-        flex-direction: column;
         text-wrap:balance;
     }
 
@@ -172,13 +172,13 @@
     }
 
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .hero-content{
         padding: 0 20px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero-section{
         max-height: 580px;
     }
@@ -221,7 +221,7 @@
         "our-experience our-staff animation-btn ";
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
     .hero-content {
 

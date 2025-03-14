@@ -6,6 +6,11 @@
 @use 'components/information-section';
 @use 'components/sliders';
 
+@use 'components/service-card';
+@use 'components/before-after';
+@use 'components/contact-us-form';
+
+@use 'components/drop-down';
 @use 'components/svg-animation';
 
 
@@ -13,7 +18,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: $dark-text;
+    color: var(--second-color);
     font-size: 16px;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
@@ -31,6 +36,7 @@
 .fw-700{
     font-weight: 700;
 }
+
 .overflow-auto{
     overflow: auto;
 }
@@ -39,7 +45,12 @@ a{
     text-decoration: none;
 }
 
-
+img{
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1;
+    width: 100%;
+}
 
 .container{
     margin: auto;
@@ -50,29 +61,46 @@ a{
 
 
 
-$content-padding: 60px!important;;
+$content-padding: 64px;
 .content{
     padding-left: $content-padding;
     padding-right: $content-padding;
 
-    &-padding-left{
-        padding-left: $content-padding
+
+    &.padding-left{
+        padding-left: $content-padding;
+
+        &-plus{
+            $content-padding: 150px;
+            padding-left: $content-padding;
+        }
     }
-    &-padding-right{
-        padding-right: $content-padding
+    &.padding-right{
+        padding-right: $content-padding;
+        &-plus{
+            $content-padding: 150px;
+            padding-right: $content-padding;
+        }
     }
+    &.padding-left-0{
+        padding-left: 0;
+    }
+    &.padding-right-0{
+        padding-right: 0;
+    }
+
 }
 
-@media (max-width: 1000px){
-    $content-padding: 20px!important;;
+@media (max-width: 1024px){
+    $content-padding: 20px!important;
     .content{
         padding-left: $content-padding;
         padding-right: $content-padding;
 
-        &-padding-left{
+        &.padding-left{
             padding-left: $content-padding
         }
-        &-padding-right{
+        &.padding-right{
             padding-right: $content-padding
         }
     }
@@ -81,13 +109,13 @@ $content-padding: 60px!important;;
     }
 }
 
-.fill {
-    &-white {
-        fill: #fff;
-    }
-    &-dark {
-        fill: $dark-text;
-    }
+
+.sprite-svg-fill{
+    fill:var(--second-color);
+}
+.sprite-svg-stroke{
+    fill:none;
+    stroke:var(--second-color);
 }
 
 .text-with-svg{
@@ -98,6 +126,8 @@ $content-padding: 60px!important;;
 
 
 .btn-240{
+    background: var(--second-color);
+    color: var(--prime-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,50 +140,70 @@ $content-padding: 60px!important;;
     font-size: 16px;
     text-align: center;
 }
-.btn-120-circle{
+
+
+// Определяем переменные для размеров и стилей
+@mixin circle-button($size,$font-size,$font-weight) {
+    background: var(--prime-color);
+    color: var(--second-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 52px;
-    min-width: 120px;
-    min-height: 120px;
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
-
-    font-weight: 400;
-    font-size: 13px;
+    min-width: $size;
+    min-height: $size;
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    font-weight: $font-weight;
+    font-size: $font-size;
     line-height: 1.5em;
     text-wrap: balance;
     text-align: center;
+    border:none;
 }
 
-
-.btn-white{
-    background: #fff;
-    color: $dark-text;
-    &-transparent{
-        border: 1px solid #fff;
-        background: transparent;
-    }
+// Круглая кнопка 120px
+.btn-120-circle {
+    @include circle-button(120px,13px,400);
 }
 
-.btn-dark{
-    background: $dark-text;
-    color: #fff;
+// Круглая кнопка 160px
+.btn-160-circle {
+    @include circle-button(160px,16px,500);
 }
+
+.btn-transparent{
+    border: 1px solid var(--prime-color);
+    background: transparent;
+}
+
 @media (max-width: 425px) {
     .btn-240{
         width: 100%;
     }
 }
 
-@media (min-width: 1001px) {
+
+.our-links{
+    display: flex;
+    gap:12px;
+    .our-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid var(--second-color);
+        border-radius: 24px;
+    }
+}
+
+@media (min-width: 769px) {
     .mobile {
         display: none!important;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .desktop {
         display: none!important;
     }

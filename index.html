@@ -14,17 +14,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/drop-down.js"></script>
 
 
 </head>
 <body>
     <aside class="top-bar desktop"><span class="top-bar-text">Забронюй свій перший візит зі знижкою <span>-5%</span> на будь яку послугу</span></aside>
 
-    <header>
+    <header class="white-style">
         <div class="container">
             <div class="content content-header desktop">
                 <div class="content-header-part overflow-auto">
-                    <img class="main-logo" src="./assets/images/logo.png" alt="">
+                    <img class="main-logo" src="./assets/icon/logo.svg" alt="">
                     <ul id="main-menu-desktop" class="main-menu">
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Наші послуги</a>
@@ -81,12 +82,14 @@
                         +38 (067) 777 68 93
                     </a>
 
-<!--                    <a href="#" class="btn-240 btn-dark">Отримати консультацію</a>-->
+<!--                    <a href="#" class="btn-240">Отримати консультацію</a>-->
                 </div>
             </div>
             <div class="content content-header mobile">
                 <div class="content-header-part">
-                    <img class="main-logo" src="./assets/images/logo.png" alt="">
+                    <svg width="40" height="40" class="sprite-svg-fill">
+                        <use href="#logo"></use>
+                    </svg>
                 </div>
                 <div class="content-header-part">
                     <div class="burger-menu">
@@ -178,7 +181,7 @@
                                         </li>
                                     </ul>
 
-                                    <a href="#" class="btn-120-circle btn-dark">Отримати консультацію</a>
+                                    <a href="#" class="btn-120-circle">Отримати консультацію</a>
                                 </div>
 
                                 <aside class="top-bar mobile"><span class="top-bar-text">Забронюй свій перший візит зі знижкою <span>-5%</span> на будь яку послугу</span></aside>
@@ -211,8 +214,8 @@
                     <h1 class="title">Місце, де довіра стає частиною лікування</h1>
                     <span class="sub-title">Ми піклуємося про найдорожче — Ваше здоров’я та красу</span>
                 </div>
-                <div class="hero-button">
-                    <a href="#" class="btn-240 btn-white">Отримати консультацію</a>
+                <div class="hero-button reverse-style">
+                    <a href="#" class="btn-240">Отримати консультацію</a>
                 </div>
             </div>
 
@@ -249,7 +252,7 @@
 
                     <div class="face-svg"></div>
 
-                    <a href="#" class="btn-240 btn-white-transparent">Дізнатися про послуги</a>
+                    <a href="#" class="btn-240 btn-transparent">Дізнатися про послуги</a>
                 </div>
 
             </div>
@@ -300,8 +303,8 @@
             </div>
         </div>
 
-        <div class="content-padding-left">
-            <div class="two-part-content">
+        <div class="content padding-left">
+            <div class="two-part-content mobile-column">
 
                 <div class="info-wrapper">
                     <div class="info">
@@ -311,7 +314,7 @@
                             <p>Так як ці сфери потребують від нас відповідальності, ми забезпечили центр новітнім обладнанням. Саме воно допомагає нам уникати помилок та знаходити найбільш раціональні шляхи лікування.</p>
                         </div>
                     </div>
-                    <a href="#" class="btn-240 btn-dark">Дізнатися більше</a>
+                    <a href="#" class="btn-240">Дізнатися більше</a>
                 </div>
 
                 <div class="photo-wrapper">
@@ -333,19 +336,19 @@
             <h2>Наші послуги</h2>
         </div>
 
-        <div class="content top-part-section">
+        <div class="content top-part-section sliderNumber-1-top-part">
 
             <div class="two-part-content">
                 <p class="section-title">Наша команда професіоналів надає різноманітні послуги</p>
 
                 <div class="slider-buttons">
-                    <div class="arrow-slider-prev-1 slider-btn slider-btn-prev">
-                        <svg width="24" height="24" class="fill-white">
+                    <div class="arrow-slider-prev slider-btn">
+                        <svg width="24" height="24" class="sprite-svg-fill">
                             <use href="#arrow-slider"></use>
                         </svg>
                     </div>
-                    <div class="arrow-slider-next-1 slider-btn">
-                        <svg width="24" height="24" class="fill-white">
+                    <div class="arrow-slider-next slider-btn">
+                        <svg width="24" height="24" class="sprite-svg-fill">
                             <use href="#arrow-slider"></use>
                         </svg>
                     </div>
@@ -363,9 +366,9 @@
                             <img class="card-image" src="./assets/images/service1.png" alt="">
                             <div class="card-text">
                                 <span>Пластична хірургія</span>
-                                <svg width="24" height="24" class="fill-white">
-                                    <use href="#arrow-slider"></use>
-                                </svg>
+                                <svg width="24" height="24" class="sprite-svg-fill">
+                            <use href="#arrow-slider"></use>
+                        </svg>
                             </div>
                         </div>
                     </div>
@@ -375,9 +378,9 @@
                             <img class="card-image" src="./assets/images/service2.png" alt="">
                             <div class="card-text">
                                 <span>Пластична хірургія</span>
-                                <svg width="24" height="24" class="fill-white">
-                                    <use href="#arrow-slider"></use>
-                                </svg>
+                                <svg width="24" height="24" class="sprite-svg-fill">
+                            <use href="#arrow-slider"></use>
+                        </svg>
                             </div>
                         </div>
                     </div>
@@ -387,9 +390,9 @@
                             <img class="card-image" src="./assets/images/service3.png" alt="">
                             <div class="card-text">
                                 <span>Пластична хірургія</span>
-                                <svg width="24" height="24" class="fill-white">
-                                    <use href="#arrow-slider"></use>
-                                </svg>
+                                <svg width="24" height="24" class="sprite-svg-fill">
+                            <use href="#arrow-slider"></use>
+                        </svg>
                             </div>
                         </div>
                     </div>
@@ -399,9 +402,9 @@
                             <img class="card-image" src="./assets/images/service4.png" alt="">
                             <div class="card-text">
                                 <span>Пластична хірургія</span>
-                                <svg width="24" height="24" class="fill-white">
-                                    <use href="#arrow-slider"></use>
-                                </svg>
+                                <svg width="24" height="24" class="sprite-svg-fill">
+                            <use href="#arrow-slider"></use>
+                        </svg>
                             </div>
                         </div>
                     </div>
@@ -411,9 +414,9 @@
                             <img class="card-image" src="./assets/images/service1.png" alt="">
                             <div class="card-text">
                                 <span>Пластична хірургія</span>
-                                <svg width="24" height="24" class="fill-white">
-                                    <use href="#arrow-slider"></use>
-                                </svg>
+                                <svg width="24" height="24" class="sprite-svg-fill">
+                            <use href="#arrow-slider"></use>
+                        </svg>
                             </div>
                         </div>
                     </div>
@@ -423,9 +426,9 @@
                             <img class="card-image" src="./assets/images/service2.png" alt="">
                             <div class="card-text">
                                 <span>Пластична хірургія</span>
-                                <svg width="24" height="24" class="fill-white">
-                                    <use href="#arrow-slider"></use>
-                                </svg>
+                                <svg width="24" height="24" class="sprite-svg-fill">
+                            <use href="#arrow-slider"></use>
+                        </svg>
                             </div>
                         </div>
                     </div>
@@ -455,34 +458,402 @@
 
             <div class="two-part-content">
                 <p class="section-title">Подивіться, що кажуть понад 1,000 наших клієнтів</p>
-
-
             </div>
 
         </div>
 
-        <div class="content-padding-left">
+        <div class="content padding-left-plus padding-right-plus">
             <div class="two-part-content">
 
-                <div class="info-wrapper">
-                    <div class="info">
-                        <p class="section-title">Ощадність та довершеність заради функції та естетики</p>
-                        <div class="section-text">
-                            <p>Наша клініка має такі основні напрямки роботи – це отоларингологія, стоматологія, косметологія, хірургія, ортопедія та травматологія. </p>
-                            <p>Так як ці сфери потребують від нас відповідальності, ми забезпечили центр новітнім обладнанням. Саме воно допомагає нам уникати помилок та знаходити найбільш раціональні шляхи лікування.</p>
+
+                <div class="swiper sliderNumber-2">
+
+                    <div class="slider-buttons">
+                        <div class="arrow-slider-prev slider-btn swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="true">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-pagination-c"></div>
+                        <div class="swiper-scrollbar-c swiper-scrollbar"></div>
+
+                        <div class="arrow-slider-next slider-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="false">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
                         </div>
                     </div>
-                    <a href="#" class="btn-240 btn-dark">Дізнатися більше</a>
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="review-titles">
+                                <p class="name">Яна Юзків</p>
+                                <p class="date">2024 рік</p>
+                            </div>
+                            <div class="section-text">
+                                <p>Сказати, що я задоволена на всі 100% – це нічого не сказати! Ви не лікарі, ви дійсно митці, інакше не скажеш. Жаль лише потраченого часу на «професіоналів» інших клінік, на яких натрапляла вже не перший рік, і все зводилось до викачування грошей, а боротись з проблемою так ніхто і не починав! А ви за один прийом зробили (як я раніше думала) щось неможливе!))</p>
+                                <p>Можу сказати лише одне, ви дійсно змогли зробити так, щоб посмішка була по справжньому щасливою))) А, і окреме дякую за вашу затишну атмосферу, бо боюсь я цих всіх медичних центрів, а стоматологів так взагалі, а у вас про хвилювання та страх не встигла і подумати, адміністратори постарались) Дякую за те, що ви є!</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="slider-top-part">
+                                <div class="review-titles">
+                                    <p class="name">Яна Юзків</p>
+                                    <p class="date">2024 рік</p>
+                                </div>
+                            </div>
+                            <div class="section-text">
+                                <p>Сказати, що я задоволена на всі 100% – це нічого не сказати! Ви не лікарі, ви дійсно митці, інакше не скажеш. Жаль лише потраченого часу на «професіоналів» інших клінік, на яких натрапляла вже не перший рік, і все зводилось до викачування грошей, а боротись з проблемою так ніхто і не починав! А ви за один прийом зробили (як я раніше думала) щось неможливе!))</p>
+                                <p>Можу сказати лише одне, ви дійсно змогли зробити так, щоб посмішка була по справжньому щасливою))) А, і окреме дякую за вашу затишну атмосферу, бо боюсь я цих всіх медичних центрів, а стоматологів так взагалі, а у вас про хвилювання та страх не встигла і подумати, адміністратори постарались) Дякую за те, що ви є!</p>
+                                <p>Сказати, що я задоволена на всі 100% – це нічого не сказати! Ви не лікарі, ви дійсно митці, інакше не скажеш. Жаль лише потраченого часу на «професіоналів» інших клінік, на яких натрапляла вже не перший рік, і все зводилось до викачування грошей, а боротись з проблемою так ніхто і не починав! А ви за один прийом зробили (як я раніше думала) щось неможливе!))</p>
+                                <p>Можу сказати лише одне, ви дійсно змогли зробити так, щоб посмішка була по справжньому щасливою))) А, і окреме дякую за вашу затишну атмосферу, бо боюсь я цих всіх медичних центрів, а стоматологів так взагалі, а у вас про хвилювання та страх не встигла і подумати, адміністратори постарались) Дякую за те, що ви є!</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="slider-top-part">
+                                <div class="review-titles">
+                                    <p class="name">Яна Юзків</p>
+                                    <p class="date">2024 рік</p>
+                                </div>
+                            </div>
+                            <div class="section-text">
+                                <p>Сказати, що я задоволена на всі 100% – це нічого не сказати! Ви не лікарі, ви дійсно митці, інакше не скажеш. Жаль лише потраченого часу на «професіоналів» інших клінік, на яких натрапляла вже не перший рік, і все зводилось до викачування грошей, а боротись з проблемою так ніхто і не починав! А ви за один прийом зробили (як я раніше думала) щось неможливе!))</p>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
 
-                <div class="photo-wrapper">
-                    <img style="border-radius: 32px 0 0  32px" src="./assets/images/photo1.png" alt="">
+
+
+                <div class="body-svg" style="">
                 </div>
 
             </div>
         </div>
     </section>
 
+
+
+
+    <section class="information-section dark-style container">
+
+
+        <div class="content padding-left-0 padding-right-plus desktop">
+            <div class="pill-place reverse-style">
+                <div class="content padding-left-plus padding-left-plus pill-area">
+                    <div class="hero-clinik">
+                        <p class="fw-700">Медичний центр</p>
+                        <p>клініка доктора Онутчака</p>
+                    </div>
+                    <p class="section-title">Ощадність та довершеність заради функції та естетики</p>
+
+                </div>
+                <a href="#" class="btn-160-circle">Отримати консультацію</a>
+            </div>
+
+        </div>
+
+        <div class="content mobile">
+            <div class="pill-place-mobile">
+                <p class="section-title">Ощадність та довершеність заради функції та естетики</p>
+                <a href="#" class="btn-240">Отримати консультацію</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="information-section white-style container">
+
+        <svg class="background-svg">
+            <use href="#circle"></use>
+        </svg>
+
+        <div class="content">
+            <h2>Наші роботи</h2>
+        </div>
+
+        <div class="content top-part-section">
+
+            <div class="two-part-content">
+                <p class="section-title">Результати, які перевершать ваші очікування</p>
+            </div>
+
+        </div>
+
+        <div class="content padding-left-plus padding-right-plus">
+            <div class="two-part-content">
+
+
+                <div class="swiper sliderNumber-3">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title">До</span>
+                                    <img src="./assets/images/bef-aft1.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title">Після</span>
+                                    <img src="./assets/images/bef-aft2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title">До</span>
+                                    <img src="./assets/images/bef-aft1.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title">Після</span>
+                                    <img src="./assets/images/bef-aft2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="slider-buttons">
+                        <div class="arrow-slider-prev slider-btn swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="true">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-scrollbar-c swiper-scrollbar"></div>
+
+                        <div class="arrow-slider-next slider-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="false">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="information-section sliderType-4 white-style container">
+
+        <div class="content">
+
+                <div class="swiper brands-block sliderNumber-4">
+                    <p style="text-align: center;">Використовуємо інструменти перевірених брендів</p>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(1).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(2).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(3).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(4).svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(5).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(6).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(7).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(1).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(2).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(3).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(4).svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(5).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(6).svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/brand%20(7).svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="information-section plus-vertical-padding overflow-visible white-style container">
+        <svg class="background-svg">
+            <use href="#circle"></use>
+        </svg>
+
+        <div class="content">
+
+
+            <div class="two-part-content mobile-column">
+
+                <div class="info-wrapper">
+                    <div class="info">
+                        <p class="section-title">Залишились питання?</p>
+                        <div class="section-text">
+                            <p>Якщо у Вас виникли питання чи Ви хочете отримати консультацію, залиште дані у формі. І ми з радістю з вами зв’яжемось.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form class="contact-us-form">
+                    <div class="two-input-blocks">
+                        <div class="this-input-block">
+                            <label for="name">Ваше ім’я:</label>
+                            <input type="text" id="name" name="name" placeholder="Ваше ім’я:" required>
+                        </div>
+                        <div class="this-input-block">
+                            <label for="phone">Ваш телефон:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+38 ____ ___ ___" required>
+                        </div>
+                    </div>
+
+                    <div class="this-input-block">
+
+
+                        <div class="drop-down">
+                            <div class="this-input-block">
+                                <label for="category">Що вас цікавить?</label>
+                                <span class="select-btn">
+                                    <input id="category" name="category" readonly class="sBtn-text" placeholder="Оберіть напрямок" required>
+                                </span>
+                            </div>
+
+                            <ul class="options">
+                                <li class="option">
+                                    <span class="option-text">Оберіть напрямок 1</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Оберіть напрямок 2</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Оберіть напрямок 3</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Оберіть напрямок 4</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                     <button type="submit" class="btn-160-circle reverse-style">Отримати консультацію</button>
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="information-section dark-style container">
+
+        <div class="content">
+
+            <div class="two-part-content mobile-column">
+
+                <div class="row-content">
+                    <svg width="60" height="60" class="sprite-svg-fill">
+                        <use href="#logo"></use>
+                    </svg>
+
+                    <div class="hero-clinik">
+                        <p class="fw-700">Медичний центр</p>
+                        <p>клініка доктора Онутчака</p>
+                    </div>
+                </div>
+
+                <div class="row-content mobile-column">
+                    <div class="our-links">
+                        <a href="#" class="our-link">
+                            <svg width="20" height="20" class="sprite-svg-fill">
+                                <use href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="our-link">
+                            <svg width="20" height="20" class="sprite-svg-fill">
+                                <use href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="our-link">
+                            <svg width="20" height="20" class="sprite-svg-stroke">
+                                <use href="#youtube"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="btn-240">Дізнатися більше</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
 
 
 
@@ -524,7 +895,7 @@
                 };
                 xhr.send();
 
-                //sprite face
+                //face svg
                 var xhrSvg = new XMLHttpRequest();
                 xhrSvg.open("GET", "assets/icon/face.svg", true);
                 xhrSvg.onreadystatechange = function () {
@@ -536,6 +907,19 @@
                     }
                 };
                 xhrSvg.send();
+
+                //body Svg
+                var xhrSvgBody = new XMLHttpRequest();
+                xhrSvgBody.open("GET", "assets/icon/body.svg", true);
+                xhrSvgBody.onreadystatechange = function () {
+                    if (xhrSvgBody.readyState === 4 && xhrSvgBody.status === 200) {
+                        var faceSvgElement = document.querySelector(".body-svg");
+                        if (faceSvgElement) {
+                            faceSvgElement.innerHTML = xhrSvgBody.responseText;
+                        }
+                    }
+                };
+                xhrSvgBody.send();
 
             });
         </script>

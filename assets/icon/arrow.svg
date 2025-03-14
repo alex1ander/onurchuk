@@ -1,9 +1,8 @@
-<svg id="arrow-slider" width="56" height="56" viewBox="0 0 56 56" fill="" xmlns="http://www.w3.org/2000/svg">
-    <rect x="1" y="-1" width="54" height="54" rx="27" transform="matrix(1 0 0 -1 0 54)" stroke-width="2"/>
-    <mask id="mask0_261_12341" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="16" width="24" height="24">
-        <rect width="24" height="24" transform="matrix(1 0 0 -1 16 40)" />
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="mask0_261_10419" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+        <rect x="24" width="24" height="24" transform="rotate(90 24 0)" fill="#D9D9D9"/>
     </mask>
-    <g mask="url(#mask0_261_12341)">
-        <path d="M30 22L28.6 23.45L32.15 27H20V29H32.15L28.6 32.55L30 34L36 28L30 22Z" fill="blue"/>
+    <g mask="url(#mask0_261_10419)">
+        <path d="M8.6 12L14.6 6L16 7.4L11.4 12L16 16.6L14.6 18L8.6 12Z" fill="#3F4041"/>
     </g>
 </svg>

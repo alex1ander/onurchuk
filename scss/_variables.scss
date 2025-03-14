@@ -1,4 +1,35 @@
-$dark-text: #3F4041;
+$dark-color: #3F4041;
+$white-color: #fff;
+
+:root {
+    --prime-color: #{$white-color};
+    --second-color: #{$dark-color};
+    .reverse-style{
+        --prime-color: #{$dark-color};
+        --second-color: #{$white-color};
+    }
+}
+
+.white-style{
+    --prime-color: #{$white-color};
+    --second-color: #{$dark-color};
+    .reverse-style{
+        --prime-color: #{$dark-color};
+        --second-color: #{$white-color};
+    }
+}
+.dark-style {
+    background: linear-gradient(106.84deg, rgba(45, 45, 45, 0.95) 1.07%, rgba(63, 64, 65, 0.95) 66.38%, rgba(45, 45, 45, 0.95) 99.28%);
+    --prime-color: #{$dark-color};
+    --second-color: #{$white-color};
+    .reverse-style{
+        --prime-color: #{$white-color};
+        --second-color: #{$dark-color};
+    }
+}
+
+
+
 
 @mixin list-element {
     > li{
@@ -13,10 +44,4 @@ $dark-text: #3F4041;
     > li:not(:last-child) > a{
         border-bottom: 1px solid #E8EAF3;
     }
-}
-
-
-@mixin container-padding {
-    padding-top: 90px;
-    padding-bottom: 90px;
 }

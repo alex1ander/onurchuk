@@ -3,10 +3,24 @@
 
 
 .information-section{
-    @include container-padding;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+
+    &.plus-vertical-padding{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    &.overflow-visible{
+        overflow: visible;
+    }
 
     position: relative;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 
 
     .section-title{
@@ -16,28 +30,17 @@
         text-wrap: pretty;
     }
     .section-text{
-        margin-top:24px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .section-text, .section-text *{
         font-weight: 400;
         font-size: 20px;
         line-height: 1.5em;
         text-wrap: pretty;
 
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
     }
-
-    &.dark-style{
-        background: linear-gradient(106.84deg, rgba(45, 45, 45, 0.95) 1.07%, rgba(63, 64, 65, 0.95) 66.38%, rgba(45, 45, 45, 0.95) 99.28%);
-
-        * {
-            color: #fff;
-        }
-        h2 {
-            border-color: #fff;
-        }
-    }
-
 }
 .background-svg{
     max-width: min(1440px,100%);
@@ -52,7 +55,7 @@
     margin: auto;
     stroke-width: 10;
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .background-svg{
         stroke-width: 30;
         top: calc(-270px / 2);
@@ -66,11 +69,7 @@ h2{
     font-size: 18px;
     line-height: 1.5em;
     padding-left: 16px;
-    border-left: 2px solid $dark-text;
-}
-
-.top-part-section{
-    margin: 48px 0;
+    border-left: 2px solid var(--second-color);
 }
 
 .doctors-row{
@@ -109,37 +108,60 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     gap:100px;
+}
+.row-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:32px;
+}
 
-
-    .info-wrapper{
-        display: flex;
-        flex-direction: column;
-        gap:56px;
-        width: 100%;
-    }
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:56px;
+    width: 100%;
 
     .info{
         text-wrap: pretty;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
     }
-    .photo-wrapper{
+}
+.photo-wrapper{
+    width: 100%;
+    img{
         width: 100%;
-        img{
-            width: 100%;
-        }
     }
 }
-@media(max-width: 1024px){
+
+@media(max-width: 768px){
     .two-part-content{
-        gap: 32px;
+        gap:48px;
     }
-}
-@media(max-width: 900px){
+    .row-content{
+        gap:24px;
+    }
+    .mobile-column{
+        flex-direction: column;
+    }
+    .info-wrapper{
+        gap:24px;
+    }
+
     .information-section{
+        padding-top: 56px;
+        padding-bottom: 56px;
+        gap: 32px;
+
+
         .section-title{
             font-size: 22px;
         }
-        .section-text{
+        .section-text, .section-text *{
             font-size: 16px;
         }
     }
@@ -154,22 +176,61 @@ h2{
             }
         }
     }
-}
 
+    .body-svg {
+        display: none;
+    }
+}
 
 @media(min-width: 769px){
     .top-part-section{
         .section-title{
-            max-width: 60%;
+            max-width: 50%;
         }
     }
 }
-@media(max-width: 768px){
-    .two-part-content{
-        flex-direction: column;
 
-        .slider-buttons{
-            display: none;
+
+
+//pill-area
+.pill-place{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 48px;
+}
+.pill-place-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+}
+
+.pill-area {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 0 32px 32px 0;
+    background: var(--prime-color);
+    width: 100%;
+    padding: 60px;
+}
+
+
+
+
+@media(max-width: 600px){
+    .pill-area {
+        .section-title{
+            text-align: center;
+        }
+        .place-for-pill{
+            flex-direction: column;
+            gap: 24px;
         }
     }
 }
+

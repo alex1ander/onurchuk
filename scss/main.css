@@ -378,12 +378,51 @@ header .text-with-svg {
   transform: rotateZ(-45deg) translateY(0);
 }
 
-footer {
-  height: 400px;
-  background: #EBEDEF;
+footer .footer-menus {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+footer .footer-menus .menu-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer-menus .menu-block .menu-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+footer .footer-menus .menu-block .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+footer .footer-menus .menu-block .menu li, footer .footer-menus .menu-block .menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
+@media (max-width: 1024px) {
+  footer .footer-menus {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-menus {
+    grid-template-columns: 1fr;
+  }
+}
 .hero-section {
+  padding: 0 !important;
   max-height: 783px;
   height: 783px;
   width: 100%;
@@ -395,7 +434,7 @@ footer {
 }
 
 .hero-content {
-  margin: 120px auto 0;
+  margin: 140px auto 0;
   padding: 0 60px;
   max-width: 1340px;
   max-height: 570px;
@@ -711,6 +750,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 32px;
+  width: 100%;
 }
 
 .info-wrapper {
@@ -742,6 +782,7 @@ h2 {
   }
   .mobile-column {
     flex-direction: column;
+    width: 100%;
   }
   .info-wrapper {
     gap: 24px;
@@ -764,7 +805,7 @@ h2 {
     font-size: 14px;
   }
   .body-svg {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 769px) {
@@ -1242,48 +1283,48 @@ h2 {
   animation: fadeIn 2s forwards 1s;
 }
 .face-svg .line1 {
-  stroke-dasharray: 556.0283813477; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 556.0283813477; /* Начальная точка, линия не видна */
+  stroke-dasharray: 556.0283813477;
+  stroke-dashoffset: 556.0283813477;
   animation: drawLine 3s ease-out forwards 2s;
 }
 .face-svg .line2 {
-  stroke-dasharray: 701.8782348633; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 701.8782348633; /* Начальная точка, линия не видна */
+  stroke-dasharray: 701.8782348633;
+  stroke-dashoffset: 701.8782348633;
   animation: drawLine 3s ease-out forwards 2s;
 }
 .face-svg .line3 {
-  stroke-dasharray: 524.5166015625; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 524.5166015625; /* Начальная точка, линия не видна */
+  stroke-dasharray: 524.5166015625;
+  stroke-dashoffset: 524.5166015625;
   animation: drawLine 3s ease-out forwards 2s;
 }
 .face-svg .line4 {
-  stroke-dasharray: 380.9153747559; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 380.9153747559; /* Начальная точка, линия не видна */
+  stroke-dasharray: 380.9153747559;
+  stroke-dashoffset: 380.9153747559;
   animation: drawLine 2.6s ease-in-out forwards 2s;
 }
 .face-svg .line5 {
-  stroke-dasharray: 146.943649292; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 146.943649292; /* Начальная точка, линия не видна */
+  stroke-dasharray: 146.943649292;
+  stroke-dashoffset: 146.943649292;
   animation: drawLine 2s forwards 2s;
 }
 .face-svg .line6 {
-  stroke-dasharray: 117.3917541504; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 117.3917541504; /* Начальная точка, линия не видна */
+  stroke-dasharray: 117.3917541504;
+  stroke-dashoffset: 117.3917541504;
   animation: drawLine 2s forwards 2s;
 }
 .face-svg .line7 {
-  stroke-dasharray: 634.8566894531; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 634.8566894531; /* Начальная точка, линия не видна */
+  stroke-dasharray: 634.8566894531;
+  stroke-dashoffset: 634.8566894531;
   animation: drawLine 2s forwards 2s;
 }
 .face-svg .line8 {
-  stroke-dasharray: 23.1932430267; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 23.1932430267; /* Начальная точка, линия не видна */
+  stroke-dasharray: 23.1932430267;
+  stroke-dashoffset: 23.1932430267;
   animation: drawLine 2s forwards 2s;
 }
 .face-svg .line9 {
-  stroke-dasharray: 63.6899604797; /* Задаем общую длину линии для рисования */
-  stroke-dashoffset: 63.6899604797; /* Начальная точка, линия не видна */
+  stroke-dasharray: 63.6899604797;
+  stroke-dashoffset: 63.6899604797;
   animation: drawLine 2s forwards 2s;
 }
 .face-svg .circle {
@@ -1292,11 +1333,13 @@ h2 {
 }
 
 .body-svg {
+  display: none;
   align-self: flex-start;
 }
 .body-svg .body-line {
   stroke-dasharray: 2598.7192382813;
   stroke-dashoffset: 2598.7192382813;
+  animation-timeline: view();
   animation: drawLine 4s ease-in-out forwards;
 }
 
@@ -1315,6 +1358,22 @@ h2 {
     opacity: 1;
   }
 }
+.information-section {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.information-section.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.information-section.visible .body-svg {
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1361,17 +1420,17 @@ img {
 }
 
 .content {
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 64px !important;
+  padding-right: 64px !important;
 }
 .content.padding-left {
-  padding-left: 64px;
+  padding-left: 64px !important !important;
 }
 .content.padding-left-plus {
   padding-left: 150px;
 }
 .content.padding-right {
-  padding-right: 64px;
+  padding-right: 64px !important;
 }
 .content.padding-right-plus {
   padding-right: 150px;
@@ -1428,6 +1487,11 @@ img {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .btn-240 {
+    width: 100%;
+  }
+}
 .btn-120-circle {
   background: var(--prime-color);
   color: var(--second-color);
@@ -1471,13 +1535,10 @@ img {
   background: transparent;
 }
 
-@media (max-width: 425px) {
-  .btn-240 {
-    width: 100%;
-  }
-}
 .our-links {
+  width: 80%;
   display: flex;
+  justify-content: center;
   gap: 12px;
 }
 .our-links .our-link {
@@ -1490,6 +1551,11 @@ img {
   border-radius: 24px;
 }
 
+@media (max-width: 500px) {
+  .our-links {
+    justify-content: space-evenly;
+  }
+}
 @media (min-width: 769px) {
   .mobile {
     display: none !important;

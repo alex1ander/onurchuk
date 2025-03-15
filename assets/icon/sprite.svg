@@ -13,6 +13,15 @@
         </g>
     </symbol>
 
+    <symbol id="mail" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_602_1825" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24"/>
+        </mask>
+        <g mask="url(#mask0_602_1825)">
+            <path d="M4 20C3.45 20 2.97917 19.8042 2.5875 19.4125C2.19583 19.0208 2 18.55 2 18V6C2 5.45 2.19583 4.97917 2.5875 4.5875C2.97917 4.19583 3.45 4 4 4H20C20.55 4 21.0208 4.19583 21.4125 4.5875C21.8042 4.97917 22 5.45 22 6V18C22 18.55 21.8042 19.0208 21.4125 19.4125C21.0208 19.8042 20.55 20 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z"/>
+        </g>
+    </symbol>
+
     <!-- Символ для location_on -->
     <symbol id="location_on" width="24" height="24" viewBox="0 0 24 24">
         <mask id="mask0_384_2009" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -59,9 +68,6 @@
         <path d="M8.33301 7.14795L13.333 10.0646L8.33301 12.9813V7.14795Z"/>
         <path d="M10 4.23096C17.5 4.23096 17.5 4.23096 17.5 10.0643C17.5 15.8976 17.5 15.8976 10 15.8976C2.5 15.8976 2.5 15.8976 2.5 10.0643C2.5 4.23096 2.5 4.23096 10 4.23096Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-
-
-
 
 
 </svg>

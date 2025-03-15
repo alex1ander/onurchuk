@@ -61,14 +61,15 @@ img{
 
 
 
-$content-padding: 64px;
+$content-padding: 64px!important;
+
 .content{
     padding-left: $content-padding;
     padding-right: $content-padding;
 
 
     &.padding-left{
-        padding-left: $content-padding;
+        padding-left: $content-padding!important;
 
         &-plus{
             $content-padding: 150px;
@@ -140,7 +141,11 @@ $content-padding: 64px;
     font-size: 16px;
     text-align: center;
 }
-
+@media (max-width: 500px) {
+    .btn-240{
+        width: 100%;
+    }
+}
 
 // Определяем переменные для размеров и стилей
 @mixin circle-button($size,$font-size,$font-weight) {
@@ -177,15 +182,11 @@ $content-padding: 64px;
     background: transparent;
 }
 
-@media (max-width: 425px) {
-    .btn-240{
-        width: 100%;
-    }
-}
-
 
 .our-links{
+    width: 80%;
     display: flex;
+    justify-content: center;
     gap:12px;
     .our-link{
         display: flex;
@@ -195,6 +196,11 @@ $content-padding: 64px;
         height: 48px;
         border: 1px solid var(--second-color);
         border-radius: 24px;
+    }
+}
+@media (max-width: 500px) {
+    .our-links {
+        justify-content: space-evenly;
     }
 }
 

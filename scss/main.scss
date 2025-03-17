@@ -3,6 +3,7 @@
 @use 'components/header';
 @use 'components/footer';
 @use 'components/hero-section';
+@use 'components/doctor-section';
 @use 'components/information-section';
 @use 'components/sliders';
 
@@ -48,7 +49,7 @@ a{
 img{
     object-fit: cover;
     object-position: center;
-    aspect-ratio: 1;
+    //aspect-ratio: 1;
     width: 100%;
 }
 
@@ -72,22 +73,24 @@ $content-padding: 64px!important;
         padding-left: $content-padding!important;
 
         &-plus{
-            $content-padding: 150px;
+            $content-padding: 150px!important;;
             padding-left: $content-padding;
         }
     }
     &.padding-right{
         padding-right: $content-padding;
         &-plus{
-            $content-padding: 150px;
+            $content-padding: 150px!important;
             padding-right: $content-padding;
         }
     }
     &.padding-left-0{
-        padding-left: 0;
+        $content-padding: 0!important;
+        padding-left: $content-padding;
     }
     &.padding-right-0{
-        padding-right: 0;
+        $content-padding: 0!important;
+        padding-right: $content-padding;
     }
 
 }
@@ -214,3 +217,4 @@ $content-padding: 64px!important;
         display: none!important;
     }
 }
+

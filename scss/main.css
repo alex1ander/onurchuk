@@ -648,6 +648,34 @@ footer .footer-menus .menu-block .menu li, footer .footer-menus .menu-block .men
   grid-area: hero-clinik;
 }
 
+.parent-svg {
+  position: relative;
+}
+.parent-svg .quotes-svg {
+  position: absolute;
+  transform: translate(10px, calc(-100% - 20px));
+}
+
+.info-wrapper.main-wrapper {
+  gap: 24px;
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.doctor-info .doctor-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.doctor-info .doctor-role {
+  color: #7A7B7C;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
 .information-section {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -702,6 +730,17 @@ footer .footer-menus .menu-block .menu li, footer .footer-menus .menu-block .men
     width: 270px;
   }
 }
+h1 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.2em;
+}
+h1 span {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2em;
+}
+
 h2 {
   font-weight: 700;
   font-size: 18px;
@@ -1152,7 +1191,7 @@ h2 {
   }
 }
 .contact-us-form {
-  width: 120%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1211,11 +1250,6 @@ h2 {
 @media (max-width: 1440px) {
   .contact-us-form button {
     position: static;
-  }
-}
-@media (max-width: 768px) {
-  .contact-us-form {
-    width: 100%;
   }
 }
 .drop-down {
@@ -1409,7 +1443,6 @@ a {
 img {
   object-fit: cover;
   object-position: center;
-  aspect-ratio: 1;
   width: 100%;
 }
 
@@ -1427,19 +1460,19 @@ img {
   padding-left: 64px !important !important;
 }
 .content.padding-left-plus {
-  padding-left: 150px;
+  padding-left: 150px !important;
 }
 .content.padding-right {
   padding-right: 64px !important;
 }
 .content.padding-right-plus {
-  padding-right: 150px;
+  padding-right: 150px !important;
 }
 .content.padding-left-0 {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 .content.padding-right-0 {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
 @media (max-width: 1024px) {

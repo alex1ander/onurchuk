@@ -1,31 +1,48 @@
-.parent-svg{
-    position: relative;
+.doctor-section{
+    .photo-wrapper{
+        max-width: 500px;
+    }
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
 
-    .quotes-svg{
-        position: absolute;
-        transform: translate(10px, calc(-100% - 20px));
+    .doctor-content{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 3fr 2fr;
+        gap: 24px 100px;
+        grid-template-areas:
+        ". photo-wrapper"
+        "doctor-text photo-wrapper";
+    }
+    .photo-wrapper { grid-area: photo-wrapper; }
+    .doctor-text { grid-area: doctor-text; }
+}
+
+@media (max-width: 768px) {
+    .doctor-section{
+        .doctor-content{
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto;
+            gap: 24px 100px;
+            grid-template-areas:
+            ". photo-wrapper"
+            "doctor-text doctor-text";
+        }
     }
 }
 
-
-.info-wrapper.main-wrapper{
-    gap:24px;
-}
-
-.doctor-info {
-    display: flex;
-    flex-direction: column;
-    gap:12px;
-    .doctor-name {
-        font-weight: 600;
-        font-size: 18px;
-
-    }
-
-    .doctor-role {
-        color:#7A7B7C;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5em;
+@media (max-width: 500px) {
+    .doctor-section{
+        .doctor-content{
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto;
+            gap: 24px 100px;
+            grid-template-areas:
+            "."
+            "photo-wrapper"
+            "doctor-text";
+        }
     }
 }

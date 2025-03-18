@@ -63,7 +63,17 @@ header{
         height: 100%;
     }
 
+    .content{
+        $content-padding: 64px;
+        padding-left: $content-padding;
+        padding-right: $content-padding;
+    }
+
     .content-header{
+        $content-padding: 64px;
+        padding-left: $content-padding;
+        padding-right: $content-padding;
+
         width: 100%;
         display: flex;
         align-items: center;
@@ -81,6 +91,21 @@ header{
         font-weight: 600;
     }
 }
+
+@media (max-width: 1024px) {
+
+    header {
+        $content-padding: 20px;
+
+        .content {
+            padding-left: $content-padding;
+            padding-right: $content-padding;
+        }
+    }
+}
+
+
+
 $main-menu-gap: 45px;
 $sizeCirlce: 5px;
 .desktop .main-menu {

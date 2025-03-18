@@ -1,0 +1,107 @@
+.benefits-wrapper {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+    grid-template-areas:
+    "big-benefit . ."
+    "big-benefit . .";
+}
+.big-benefit { grid-area: big-benefit; }
+
+
+.the-benefit{
+    $benefit-padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    background: #EBEDEF;
+    padding: $benefit-padding;
+    border-bottom-right-radius: 20px;
+    &.big-benefit{
+        padding: $benefit-padding * 2;
+        border-bottom-right-radius: 60px;
+
+        .section-text{
+            color:#98999A;
+        }
+    }
+
+    .benefit-top-part{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .place-for-benefit-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--prime-color);
+        height: 48px;
+        width: 48px;
+        min-height: 48px;
+        min-width: 48px;
+        border-radius: 100%;
+    }
+
+    .benefit-title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+    .benefit-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-wrapper {
+        display: grid;
+        //grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 18px;
+        grid-template-areas:
+        "big-benefit big-benefit"
+        ". .";
+
+        .the-benefit{
+            justify-content: flex-start;
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .the-benefit {
+        .benefit-title {
+            font-size: 18px;
+        }
+
+        .benefit-text {
+            font-size: 14px;
+        }
+    }
+
+    .benefits-wrapper {
+        display: grid;
+        //grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 18px;
+        grid-template-areas:
+        "big-benefit"
+        ".";
+
+        .the-benefit{
+            justify-content: flex-start;
+        }
+    }
+}

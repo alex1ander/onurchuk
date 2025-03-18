@@ -103,7 +103,7 @@ $animationTime: 2;
 .information-section.visible {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
+    transform: unset;
     
     .body-svg{
         display: block;

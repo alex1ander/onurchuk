@@ -192,6 +192,7 @@ $slider-btn-size:56px;
     .slider-buttons{
         max-width: 60%;
         margin: auto;
+        margin-top:20px;
     }
     .swiper-scrollbar-c{
         &.swiper-scrollbar{
@@ -206,12 +207,23 @@ $slider-btn-size:56px;
         }
 
     }
+
+    .sertificate{
+        display: flex;
+        margin: auto;
+        max-width: 70%;
+    }
 }
 
 
 @media (max-width: 768px) {
     .sliderNumber-3 {
         .slider-buttons {
+            max-width: 100%;
+        }
+        .sertificate{
+            display: flex;
+            margin: auto;
             max-width: 100%;
         }
     }

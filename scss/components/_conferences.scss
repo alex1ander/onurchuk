@@ -24,16 +24,6 @@
             padding: 24px;
             border-top: 1px solid #EBEDEF;
 
-            .conference-name{
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 1.2em;
-            }
-            .conference-date{
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 1.5em;
-            }
         }
     }
 }
@@ -43,13 +33,6 @@
         .conferences {
             .conference {
                 width: 100%;
-
-                .conference-name{
-                    font-size: 18px;
-                }
-                .conference-date{
-                    font-size: 16px;
-                }
             }
         }
     }

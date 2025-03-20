@@ -1,6 +1,8 @@
 .before-after-block{
     display: flex;
     gap:32px;
+    justify-content: center;
+    max-height: 600px;
 
     img{
         width: 100%;
@@ -68,9 +70,45 @@
 }
 
 
+
+.sliderNumber-3-thumbs{
+    margin-top: 40px;
+}
+
+.no-slider{
+    display: grid!important;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .swiper-slide{
+        margin-top:10px;
+        opacity: 0.6;
+        transition: opacity 0.4s ease-out;
+        width:100%!important;
+    }
+
+    .swiper-slide-thumb-active{
+        opacity: 1;
+    }
+}
+
+
+.before-after-block-thumbs{
+    display: flex;
+    max-height: 160px;
+    height: 100%;
+    justify-content: center;
+}
+
+
+
 @media (max-width: 768px) {
     .before-after-block {
         gap: 16px;
+    }
+
+    .no-slider{
+        grid-template-columns: 1fr 1fr;
     }
 }
 

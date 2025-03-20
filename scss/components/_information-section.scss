@@ -64,9 +64,12 @@
 }
 
 h1{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.2em;
+    &:has(span){
+        font-weight: 300;
+    }
     & span{
         font-weight: 600;
         font-size: 36px;
@@ -130,6 +133,14 @@ h2{
     width: 100%;
     gap:100px;
 }
+
+.column-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:32px;
+}
 .row-content{
     display: flex;
     align-items: center;
@@ -140,7 +151,7 @@ h2{
 .info-wrapper{
     display: flex;
     flex-direction: column;
-    gap:56px;
+    gap: 56px;
     width: 100%;
 
     .info{
@@ -149,15 +160,46 @@ h2{
         gap: 40px;
         flex-direction: column;
     }
+
+    &-preview{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+
+        .info{
+            text-wrap: pretty;
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+        }
+    }
 }
 .photo-wrapper{
     width: 100%;
+    font-size:0;
     img{
         width: 100%;
     }
 }
 
+.title-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+@media(min-width: 769px){
+    .row-reverse-desktop{
+        flex-direction: row-reverse!important;
+    }
+}
 @media(max-width: 768px){
+    .column-reverse-mobile{
+        flex-direction: column-reverse!important;
+    }
+
     .two-part-content{
         gap:48px;
     }

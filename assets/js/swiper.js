@@ -38,6 +38,20 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+
+
+    // siper 3
+
+    var swiper3thumbs = new Swiper(".sliderNumber-3-thumbs", {
+        spaceBetween: 20,
+        slidesPerView: 4, // Автоматическая ширина
+        freeMode: true, // Позволяет слайдам быть на одной линии без перелистывания
+        watchSlidesProgress: true,
+        allowTouchMove: false, // Запрещает ручную прокрутку
+        watchOverflow: true, // Отключает ненужные возможности, если слайдов мало
+        loop: false, // Отключает дублирование слайдов
+    });
+
     var swiper3 = new Swiper(".sliderNumber-3", {
         spaceBetween: 20,
         autoHeight: true,
@@ -49,8 +63,17 @@ document.addEventListener('DOMContentLoaded', function () {
             el: ".sliderNumber-3 .swiper-scrollbar-c",
             hide: true,
         },
+        thumbs: {
+            swiper: swiper3thumbs,
+        },
     });
 
+
+
+
+
+
+    //swiper 4
     var swiper4 = new Swiper(".sliderNumber-4", {
         slidesPerView: 4,
         spaceBetween: 20,

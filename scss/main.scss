@@ -3,11 +3,13 @@
 @use 'components/header';
 @use 'components/footer';
 @use 'components/hero-section';
+@use 'components/hero-blog-section';
 @use 'components/about-us-section';
 @use 'components/doctor-section';
 @use 'components/information-section';
 @use 'components/sliders';
 
+@use 'components/blog';
 @use 'components/benefits';
 @use 'components/service-card';
 @use 'components/doctor-card';
@@ -16,7 +18,7 @@
 
 @use 'components/conferences';
 
-@use 'components/related-posts';
+@use 'components/related-doctors';
 @use 'components/accordions';
 @use 'components/drop-down';
 @use 'components/svg-animation';
@@ -58,8 +60,11 @@ img{
     object-position: center;
     //aspect-ratio: 1;
     width: 100%;
+    height: 100%;
 }
 
+
+$content-padding: 64px;
 .container{
     margin: auto;
     width: 100%;
@@ -68,7 +73,7 @@ img{
 .container-s{
     margin: auto;
     width: 100%;
-    max-width: 920px;
+    max-width: calc(920px + $content-padding * 2);
 }
 
 
@@ -80,12 +85,10 @@ img{
 }
 
 
-
-
 .information-section {
-    $content-padding: 64px;
 
     .content {
+        width: 100%;
         padding-left: $content-padding;
         padding-right: $content-padding;
 
@@ -220,7 +223,8 @@ img{
 }
 
 .btn-transparent{
-    border: 1px solid var(--prime-color);
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
     background: transparent;
 }
 
@@ -254,6 +258,51 @@ img{
 @media (max-width: 768px) {
     .desktop {
         display: none!important;
+    }
+}
+
+
+
+
+.blog-name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+.blog-date{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color:#7A7B7C;
+}
+.blog-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+@media (max-width: 768px){
+    .blog-name{
+        font-size: 18px;
+    }
+    .blog-date{
+        font-size: 16px;
+    }
+    .blog-text{
+        font-size: 16px;
+    }
+}
+
+.breadcrumbs{
+    display: flex;
+    gap: 8px;
+
+    span{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5em;
+        padding: 10px 16px;
+        border: 1px solid var(--second-color);
+        border-radius: 20px;
     }
 }
 

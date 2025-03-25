@@ -12,7 +12,7 @@
 @use 'components/comparison-slider';
 
 @use 'components/blog';
-@use 'components/benefits';
+@use 'components/grid-card';
 @use 'components/service-card';
 @use 'components/doctor-card';
 @use 'components/before-after';
@@ -20,7 +20,7 @@
 
 @use 'components/conferences';
 
-@use 'components/related-doctors';
+@use 'components/nav-links';
 @use 'components/accordions';
 @use 'components/tabs';
 @use 'components/drop-down';
@@ -41,13 +41,13 @@
 }
 
 .fw-500{
-    font-weight: 500;
+    font-weight: 500!important;
 }
 .fw-600{
-    font-weight: 600;
+    font-weight: 600!important;
 }
 .fw-700{
-    font-weight: 700;
+    font-weight: 700!important;
 }
 
 .overflow-auto{
@@ -160,7 +160,6 @@ $content-padding: 64px;
 
 .sprite-svg-fill{
     fill:var(--second-color);
-    flex-shrink: 0;
 }
 .sprite-svg-stroke{
     fill:none;
@@ -230,6 +229,47 @@ $content-padding: 64px;
     border: 1px solid var(--second-color);
     background: transparent;
 }
+
+.scroll-to-top-btn{
+    $btn-size: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: $btn-size;
+    width: $btn-size;
+    height: $btn-size;
+    min-width: $btn-size;
+    min-height: $btn-size;
+    margin: auto;
+
+    border-radius: 100%;
+    cursor: pointer;
+
+
+    svg{
+        transition: transform 0.2s ease-out;
+    }
+
+    &:hover{
+        svg{
+            transform: rotate(-45deg);
+        }
+
+    }
+    margin: 13px auto;
+    animation: shadowGrow 1.6s infinite alternate;
+}
+@keyframes shadowGrow {
+    0% {
+        box-shadow: 0 0 0 0px #C3B4F226;
+    }
+    100% {
+        box-shadow: 0 0 0 10px #C3B4F226;
+    }
+}
+
 
 
 .our-links{

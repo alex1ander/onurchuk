@@ -13,7 +13,7 @@
 
     &:has(input:invalid){
         button{
-            background: #EBEDEF;
+            background: var(--support-color);
             color: var(--prime-color);
             right: -140px;
             pointer-events: none;

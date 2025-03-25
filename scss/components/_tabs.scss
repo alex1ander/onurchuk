@@ -13,10 +13,13 @@
     border: none;
     cursor: pointer;
     text-align: center;
-    font-size: 16px;
     position: relative;
     opacity: 0.5;
     border-bottom: 2px solid var(--second-color);
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2em;
 }
 
 .tab-head.active {
@@ -39,5 +42,14 @@
 
     &.active{
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs-head{
+        max-width: 100%;
+    }
+    .tab-head {
+        font-size: 16px;
     }
 }

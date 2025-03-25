@@ -1,9 +1,13 @@
 $dark-color: #3F4041;
+$dark-gray-color:#707070;
+
 $white-color: #fff;
+$white-gray-color:#EBEDEF;
 
 :root {
     --prime-color: #{$white-color};
     --second-color: #{$dark-color};
+    --support-color: #{$white-gray-color};
     .reverse-style{
         --prime-color: #{$dark-color};
         --second-color: #{$white-color};
@@ -13,6 +17,7 @@ $white-color: #fff;
 .white-style{
     --prime-color: #{$white-color};
     --second-color: #{$dark-color};
+    --support-color: #{$white-gray-color};
     .reverse-style{
         --prime-color: #{$dark-color};
         --second-color: #{$white-color};
@@ -22,6 +27,7 @@ $white-color: #fff;
     background: linear-gradient(106.84deg, rgba(45, 45, 45, 0.95) 1.07%, rgba(63, 64, 65, 0.95) 66.38%, rgba(45, 45, 45, 0.95) 99.28%);
     --prime-color: #{$dark-color};
     --second-color: #{$white-color};
+    --support-color: #{$dark-gray-color};
     .reverse-style{
         --prime-color: #{$white-color};
         --second-color: #{$dark-color};

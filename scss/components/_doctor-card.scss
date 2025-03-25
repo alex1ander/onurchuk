@@ -1,7 +1,7 @@
 .doctor-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #EBEDEF;
+    border: 1px solid var(--support-color);
     border-radius: 20px;
 
     .card-image{

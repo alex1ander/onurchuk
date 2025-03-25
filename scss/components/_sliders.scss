@@ -215,6 +215,27 @@ $slider-btn-size:56px;
     }
 }
 
+.sliderNumber-3-thumbs{
+    margin-top: 40px;
+    .swiper-wrapper{
+        gap:16px;
+    }
+}
+.no-slider{
+    display: grid!important;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .swiper-slide{
+        opacity: 0.6;
+        transition: opacity 0.4s ease-out;
+        width:100% !important;
+    }
+
+    .swiper-slide-thumb-active{
+        opacity: 1;
+    }
+}
 
 @media (max-width: 768px) {
     .sliderNumber-3 {

@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var swiper3Comparison = new Swiper(".sliderNumber-3.comparison", {
         spaceBetween: 20,
         autoHeight: true,
+        allowTouchMove: false,
         navigation: {
             prevEl: ".sliderNumber-3.comparison .arrow-slider-prev",
             nextEl: ".sliderNumber-3.comparison .arrow-slider-next",

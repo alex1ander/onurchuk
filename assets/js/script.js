@@ -12,3 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     blocks.forEach((block) => observer.observe(block));
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});

@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/comparison-slider.js"></script>
     <script src="./assets/js/drop-down.js"></script>
     <script src="./assets/js/accordions.js"></script>
-    <script src="./assets/js/accordions.js"></script>
+    <script src="./assets/js/tabs.js"></script>
     <script src="./assets/js/script.js"></script>
 
 
@@ -229,284 +230,456 @@
 
     <div class="content padding-left-plus padding-right-plus">
 
-            <div class="swiper sliderNumber-3">
+        <div class="tabs-head">
+            <div id="tab-head-1" class="tab-head active">Пластична хірургія</div>
+            <div id="tab-head-2" class="tab-head">Стоматологія</div>
 
-                <div class="swiper-wrapper">
+            <div class="indicator"></div>
+        </div>
 
-                    <div class="swiper-slide">
+        <div class="tabs-body">
+            
+            <div id="tab-body-1" class="tab-body active">
 
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft1.png" alt="">
+                <div class="swiper sliderNumber-3 picture">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft1.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft2.png" alt="">
+                                </div>
                             </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft2.png" alt="">
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
                             </div>
+
                         </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft3.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
                         </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft5.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft7.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft8.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft9.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft10.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft11.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft12.png" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft13.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft14.png" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="before">
+                                    <span class="pill-title before-pill">До</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft15.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <span class="pill-title after-pill">Після</span>
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft16.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
 
                     </div>
 
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft3.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
+                    <div class="slider-buttons">
+                        <div class="arrow-slider-prev slider-btn swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="true">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
                         </div>
 
+                        <div class="swiper-scrollbar-c swiper-scrollbar"></div>
+
+                        <div class="arrow-slider-next slider-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="false">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
+                        </div>
                     </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft5.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft7.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft8.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft9.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft10.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft11.png" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft12.png" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft13.png" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft14.png" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="before-after-block">
-                            <div class="before">
-                                <span class="pill-title">До</span>
-                                <img src="./assets/images/bef-aft15.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <span class="pill-title">Після</span>
-                                <img src="./assets/images/bef-aft16.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="before-after-text">
-                            <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
-                            <p class="category">Пластична хірургія</p>
-                        </div>
-
-                    </div>
-
 
                 </div>
 
-                <div class="slider-buttons">
-                    <div class="arrow-slider-prev slider-btn swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="true">
-                        <svg width="24" height="24" class="sprite-svg-fill">
-                            <use href="#arrow-slider"></use>
-                        </svg>
-                    </div>
 
-                    <div class="swiper-scrollbar-c swiper-scrollbar"></div>
 
-                    <div class="arrow-slider-next slider-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="false">
-                        <svg width="24" height="24" class="sprite-svg-fill">
-                            <use href="#arrow-slider"></use>
-                        </svg>
+                <div thumbsSlider="" class="swiper sliderNumber-3-thumbs picture">
+                    <div class="swiper-wrapper no-slider">
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft1.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft3.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft5.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft7.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft9.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft10.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft11.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft12.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft13.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft14.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft15.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft16.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
 
+            <div id="tab-body-2" class="tab-body">
 
 
-            <div thumbsSlider="" class="swiper sliderNumber-3-thumbs">
-                <div class="swiper-wrapper no-slider">
 
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft1.png" alt="">
+                <div class="swiper  sliderNumber-3 comparison">
+
+
+
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="image-comparison" data-component="image-comparison-slider">
+                                    <div class="image-comparison__slider-wrapper">
+                                        <label for="image-comparison-range" class="image-comparison__label">Move image comparison slider</label>
+                                        <input type="range" min="0" max="100" value="50" class="image-comparison__range" id="image-compare-range" data-image-comparison-range="">
+
+
+                                        <div class="image-comparison__image-wrapper image-comparison__image-wrapper--overlay" data-image-comparison-overlay="">
+                                            <figure class="image-comparison__figure image-comparison__figure--overlay">
+                                                <img src="./assets/images/bef-aft-2-1.png" alt="Mojave desert in the sun" class="image-comparison__image">
+                                            </figure>
+                                        </div>
+
+                                        <div class="image-comparison__slider" data-image-comparison-slider="">
+                                                <span class="image-comparison__thumb" data-image-comparison-thumb="">
+                                                    <svg class="before" width="41" height="41">
+                                                        <use href="#triangle"></use>
+                                                    </svg>
+                                                    <svg class="after" width="41" height="41">
+                                                        <use href="#triangle"></use>
+                                                     </svg>
+                                                </span>
+                                        </div>
+
+                                        <div class="image-comparison__image-wrapper">
+
+                                            <span class="pill-title before-pill">До</span>
+                                            <span class="pill-title after-pill">Після</span>
+                                            <figure class="image-comparison__figure">
+                                                <img src="./assets/images/bef-aft-2-2.png" style="display: flex"  class="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft2.png" alt="">
+
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
                             </div>
+
                         </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="before-after-block">
+                                <div class="image-comparison" data-component="image-comparison-slider">
+                                    <div class="image-comparison__slider-wrapper">
+                                        <label for="image-comparison-range" class="image-comparison__label">Move image comparison slider</label>
+                                        <input type="range" min="0" max="100" value="50" class="image-comparison__range" id="image-compare-range" data-image-comparison-range="">
+
+
+                                        <div class="image-comparison__image-wrapper image-comparison__image-wrapper--overlay" data-image-comparison-overlay="">
+                                            <figure class="image-comparison__figure image-comparison__figure--overlay">
+                                                <img src="./assets/images/bef-aft3.jpg" alt="Mojave desert in the sun" class="image-comparison__image">
+                                            </figure>
+                                        </div>
+
+                                        <div class="image-comparison__slider" data-image-comparison-slider="">
+                                                <span class="image-comparison__thumb" data-image-comparison-thumb="">
+                                                    <svg class="before" width="41" height="41">
+                                                        <use href="#triangle"></use>
+                                                    </svg>
+                                                    <svg class="after" width="41" height="41">
+                                                        <use href="#triangle"></use>
+                                                     </svg>
+                                                </span>
+                                        </div>
+
+                                        <div class="image-comparison__image-wrapper">
+
+                                            <span class="pill-title before-pill">До</span>
+                                            <span class="pill-title after-pill">Після</span>
+                                            <figure class="image-comparison__figure">
+                                                <img src="./assets/images/bef-aft4.jpg" style="display: flex"  class="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="before-after-text">
+                                <p class="text">Пластика обличя та шиї, фейсліфтинг</p>
+                                <p class="category">Пластична хірургія</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft3.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft4.jpg" alt="">
-                            </div>
+                    <div class="slider-buttons">
+                        <div class="arrow-slider-prev slider-btn swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="true">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft5.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft6.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                        <div class="swiper-scrollbar-c swiper-scrollbar"></div>
 
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft7.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft8.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft9.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft10.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft11.png" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft12.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft13.png" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft14.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="before-after-block-thumbs">
-                            <div class="before">
-                                <img src="./assets/images/bef-aft15.jpg" alt="">
-                            </div>
-                            <div class="after">
-                                <img src="./assets/images/bef-aft16.jpg" alt="">
-                            </div>
+                        <div class="arrow-slider-next slider-btn" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a63e53e314294440" aria-disabled="false">
+                            <svg width="24" height="24" class="sprite-svg-fill">
+                                <use href="#arrow-slider"></use>
+                            </svg>
                         </div>
                     </div>
 
                 </div>
+
+
+
+                <div thumbsSlider="" class="swiper sliderNumber-3-thumbs comparison">
+                    <div class="swiper-wrapper no-slider">
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft-2-1.png" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft-2-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="before-after-block-thumbs">
+                                <div class="before">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft3.jpg" alt="">
+                                </div>
+                                <div class="after">
+                                    <img class="prev-image-thumb" src="./assets/images/bef-aft4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                
+
+
             </div>
+
+        </div>
 
 
     </div>

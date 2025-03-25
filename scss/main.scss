@@ -7,7 +7,9 @@
 @use 'components/about-us-section';
 @use 'components/doctor-section';
 @use 'components/information-section';
+
 @use 'components/sliders';
+@use 'components/comparison-slider';
 
 @use 'components/blog';
 @use 'components/benefits';
@@ -20,6 +22,7 @@
 
 @use 'components/related-doctors';
 @use 'components/accordions';
+@use 'components/tabs';
 @use 'components/drop-down';
 @use 'components/svg-animation';
 

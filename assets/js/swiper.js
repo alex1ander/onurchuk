@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // siper 3
 
-    var swiper3thumbs = new Swiper(".sliderNumber-3-thumbs", {
+    var swiper3thumbs = new Swiper(".sliderNumber-3-thumbs.picture", {
         spaceBetween: 20,
         slidesPerView: 4, // Автоматическая ширина
         freeMode: true, // Позволяет слайдам быть на одной линии без перелистывания
@@ -52,15 +52,15 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: false, // Отключает дублирование слайдов
     });
 
-    var swiper3 = new Swiper(".sliderNumber-3", {
+    var swiper3 = new Swiper(".sliderNumber-3.picture", {
         spaceBetween: 20,
         autoHeight: true,
         navigation: {
-            prevEl: ".sliderNumber-3 .arrow-slider-prev",
-            nextEl: ".sliderNumber-3 .arrow-slider-next",
+            prevEl: ".sliderNumber-3.picture .arrow-slider-prev",
+            nextEl: ".sliderNumber-3.picture .arrow-slider-next",
         },
         scrollbar: {
-            el: ".sliderNumber-3 .swiper-scrollbar-c",
+            el: ".sliderNumber-3.picture .swiper-scrollbar-c",
             hide: true,
         },
         thumbs: {
@@ -69,6 +69,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+
+
+    var swiper3thumbsComparison = new Swiper(".sliderNumber-3-thumbs.comparison", {
+        spaceBetween: 20,
+        slidesPerView: 4, // Автоматическая ширина
+        freeMode: true, // Позволяет слайдам быть на одной линии без перелистывания
+        watchSlidesProgress: true,
+        allowTouchMove: false, // Запрещает ручную прокрутку
+        watchOverflow: true, // Отключает ненужные возможности, если слайдов мало
+        loop: false, // Отключает дублирование слайдов
+    });
+
+    var swiper3Comparison = new Swiper(".sliderNumber-3.comparison", {
+        spaceBetween: 20,
+        autoHeight: true,
+        navigation: {
+            prevEl: ".sliderNumber-3.comparison .arrow-slider-prev",
+            nextEl: ".sliderNumber-3.comparison .arrow-slider-next",
+        },
+        scrollbar: {
+            el: ".sliderNumber-3.comparison .swiper-scrollbar-c",
+            hide: true,
+        },
+        thumbs: {
+            swiper: swiper3thumbsComparison,
+        },
+    });
 
 
 

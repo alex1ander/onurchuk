@@ -1458,52 +1458,53 @@ h2 {
   flex-direction: column;
   gap: 32px;
 }
-.the-blog-content h3 {
+
+section h3 {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2em;
 }
-.the-blog-content h4 {
+section h4 {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2em;
 }
-.the-blog-content p {
+section p {
   line-height: 1.5em;
 }
-.the-blog-content span {
+section span {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5em;
 }
-.the-blog-content ul {
+section ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.the-blog-content ul li {
+section ul li {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.the-blog-content ul li::before {
+section ul li::before {
   content: "";
   display: inline-block;
   width: 24px;
   height: 24px;
   background-image: url("../assets/icon/arrow-slider.svg");
 }
-.the-blog-content ol {
+section ol {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-left: 24px;
 }
-.the-blog-content div.place-for-table {
+section div.place-for-table {
   overflow: auto;
 }
-.the-blog-content table {
+section table {
   border: 1px solid var(--support-color);
   height: 100%;
   width: 100%;
@@ -1511,10 +1512,10 @@ h2 {
   border-spacing: 1px;
   text-align: left;
 }
-.the-blog-content table thead tr {
+section table thead tr {
   background: rgba(195, 180, 242, 0.1490196078);
 }
-.the-blog-content table thead tr th {
+section table thead tr th {
   text-align: center;
   font-weight: 600;
   font-size: 16px;
@@ -1522,10 +1523,10 @@ h2 {
   border: 1px solid var(--support-color);
   padding: 10px;
 }
-.the-blog-content table tbody tr:nth-child(even) {
+section table tbody tr:nth-child(even) {
   background: rgba(195, 180, 242, 0.1490196078);
 }
-.the-blog-content table tbody tr td {
+section table tbody tr td {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -1561,6 +1562,7 @@ h2 {
   gap: 32px;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 .the-grid-card .row.flex-start {
   align-items: flex-start;
@@ -1576,6 +1578,8 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  height: 100%;
+  justify-content: center;
 }
 .the-grid-card .place-for-benefit-icon {
   display: flex;

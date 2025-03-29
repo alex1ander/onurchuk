@@ -40,8 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // siper 3
-
+    // swiper 3
     var swiper3thumbs = new Swiper(".sliderNumber-3-thumbs.picture", {
         spaceBetween: 20,
         slidesPerView: 4, // Автоматическая ширина
@@ -51,8 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         watchOverflow: true, // Отключает ненужные возможности, если слайдов мало
         loop: false, // Отключает дублирование слайдов
     });
-
-    var swiper3 = new Swiper(".sliderNumber-3.picture", {
+    var swiper3withthumbs = new Swiper(".sliderNumber-3.with-thumbs.picture", {
         spaceBetween: 20,
         autoHeight: true,
         navigation: {
@@ -66,6 +64,23 @@ document.addEventListener('DOMContentLoaded', function () {
         thumbs: {
             swiper: swiper3thumbs,
         },
+    });
+
+
+    var swiper3 = new Swiper(".sliderNumber-3.picture", {
+        spaceBetween: 20,
+        autoHeight: true,
+        navigation: {
+            prevEl: ".sliderNumber-3.picture .arrow-slider-prev",
+            nextEl: ".sliderNumber-3.picture .arrow-slider-next",
+        },
+        scrollbar: {
+            el: ".sliderNumber-3.picture .swiper-scrollbar-c",
+            hide: true,
+        },
+        // thumbs: {
+        //     swiper: swiper3thumbs,
+        // },
     });
 
 
